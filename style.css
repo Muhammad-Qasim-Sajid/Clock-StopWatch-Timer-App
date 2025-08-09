@@ -1,0 +1,499 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+button {
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.heading-text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation: typewriter 1.5s ease-in-out forwards;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11ch;
+    }
+}
+
+.nav {
+    height: 64px;
+    width: 600px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    border-radius: 3px;
+    margin: 1vh auto 0;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out 0.8s forwards;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cbd5e1;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out 1.2s forwards;
+}
+
+.nav-options-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out 1.4s forwards;
+}
+
+.nav-option {
+    padding: 4px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #334155;
+    border: 1px solid #475569;
+    color: #e2e8f0;
+}
+
+.nav-option:hover {
+    background-color: #475569;
+    color: #f8fafc;
+}
+
+.nav-option:active {
+    background-color: #64748b;
+}
+
+.clock-div {
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.clock-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.clock-time {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    color: #f8fafc;
+    letter-spacing: 2px;
+}
+
+.hide-clock {
+    display: none;
+}
+
+.stopwatch-div {
+    text-align: center;
+}
+
+.stopwatch-time {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    margin-top: 8vh;
+    color: #10b981;
+    letter-spacing: 2px;
+}
+
+.hide-stopwatch-time {
+    display: none;
+}
+
+.start {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #059669;
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.start:hover {
+    background-color: #10b981;
+}
+
+.hide-start {
+    display: none;
+}
+
+.stop {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #dc2626;
+    margin: 20px auto 0;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stop:hover {
+    background-color: #ef4444;
+}
+
+.hide-stop {
+    display: none;
+}
+
+.resume-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 6vh;
+}
+
+.resume {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.resume:hover {
+    background-color: #3b82f6;
+}
+
+.reset {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.reset:hover {
+    background-color: #64748b;
+}
+
+.hide-resume-reset {
+    display: none;
+}
+
+.timer-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    gap: 16px;
+}
+
+.input-minute {
+    height: 48px;
+    width: 280px;
+    border: 1px solid #475569;
+    border-radius: 3px;
+    padding: 0 16px;
+    font-size: 14px;
+    outline: none;
+    background-color: #1e293b;
+    color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.input-minute::placeholder {
+    color: #64748b;
+}
+
+.input-minute:focus {
+    border-color: #8b5cf6;
+    background-color: #0f172a;
+}
+
+.start-timer {
+    height: 48px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    background-color: #f59e0b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.start-timer:hover {
+    background-color: #f59e0b;
+}
+
+.hide-timer {
+    display: none;
+}
+
+.timer-div {
+    text-align: center;
+}
+
+.timer-time {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    margin-top: 8vh;
+    color: #f59e0b;
+    letter-spacing: 2px;
+}
+
+.pause-reset-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 6vh;
+}
+
+.pause-timer {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #d97706;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pause-timer:hover {
+    background-color: #f59e0b;
+}
+
+.reset-timer {
+    height: 48px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.reset-timer:hover {
+    background-color: #64748b;
+}
+
+.re-timer {
+    height: 48px;
+    width: 140px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #dc2626;
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.re-timer:hover {
+    background-color: #ef4444;
+}
+
+.hide-re-timer {
+    display: none;
+}
+
+.hide-timer-clock {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+    .nav {
+        width: 80vw;
+        height: 52px;
+        padding: 0 16px;
+        gap: 25px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 3vh;
+    }
+
+    .nav-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .nav-options-div {
+        gap: 8px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    .nav-option {
+        padding: 3px 10px;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+
+    .clock-time {
+        font-size: 3.2rem;
+    }
+
+    .stopwatch-time,
+    .timer-time {
+        font-size: 4rem;
+    }
+
+    .start,
+    .stop,
+    .resume,
+    .reset,
+    .pause-timer,
+    .reset-timer,
+    .start-timer,
+    .re-timer {
+        width: 80px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .resume {
+        width: 80px;
+    }
+
+    .re-timer {
+        width: 80px;
+    }
+
+    .input-minute {
+        width: 200px;
+        height: 44px;
+        font-size: 13px;
+    }
+
+    .resume-reset,
+    .pause-reset-timer {
+        gap: 60px;
+    }
+
+    .stop {
+        margin: 40px auto 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-text {
+        font-size: 9px;
+        font-weight: 600;
+    }
+
+    .clock-time {
+        font-size: 2.2rem;
+    }
+
+    .stopwatch-time,
+    .timer-time {
+        font-size: 3.2rem;
+    }
+
+    .input-minute {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+        padding: 0 12px;
+    }
+
+    .timer-clock {
+        gap: 5px;
+    }
+
+    .resume-reset,
+    .pause-reset-timer {
+        gap: 30px;
+    }
+
+    .stop {
+        margin: 40px auto 0;
+    }
+}

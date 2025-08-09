@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="heading">
+        <h1 class="heading-text">Time to Stare</h1>
+    </div>
+
+    <div class="nav">
+        <p class="nav-text">Click one of These...</p>
+            <div class="nav-options-div">
+                <p class="nav-option clock">Clock</p>
+                <p class="nav-option stop-watch">Stop-Watch</p>
+                <p class="nav-option timer">Timer</p>
+            </div>
+    </div>
+
+    <div class="clock-div hide-clock">
+        <p class="clock-text">Local Time</p>
+        <p class="clock-time">00:00:00 AM</p>
+    </div>
+
+    <div class="stopwatch-div">
+        <p class="stopwatch-time hide-stopwatch-time">00:00:00</p>
+        <button class="start hide-start">Start</button>
+    </div>
+        <button class="stop hide-stop">Stop</button>
+    <div class="resume-reset hide-resume-reset">
+        <button class="resume">Resume</button>
+        <button class="reset">Reset</button>
+    </div>
+
+    <div class="timer-clock hide-timer">
+        <input type="text" placeholder="Enter time in Minutes" class="input-minute">
+        <button class="start-timer" type="button">Start</button>
+    </div>
+    <div class="timer-div hide-timer-clock">
+        <p class="timer-time">00:00:00</p>
+            <div class="pause-reset-timer">
+                <button class="pause-timer">Pause</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+            <button class="re-timer hide-re-timer">Restart</button>
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
