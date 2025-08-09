@@ -5,14 +5,14 @@ Switch between **Clock**, **Stopwatch**, and **Countdown Timer**.
 
 ## 📷 Screenshots
 
-### 🕒 Clock
-![Clock Screenshot](ScreenShot 1.png)
+### Clock
+![Clock Screenshot](ScreenShot1.png)
 
-### ⏱ Stopwatch
-![Stopwatch Screenshot](ScreenShot 2.png)
+### Stopwatch
+![Stopwatch Screenshot](ScreenShot2.png)
 
-### ⏳ Timer
-![Timer Screenshot](ScreenShot 3.png)
+### Timer
+![Timer Screenshot](ScreenShot3.png)
 
 ## Features
 
