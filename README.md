@@ -47,4 +47,4 @@ Key learning points:
 - Keeping **UI states synced** with the timer/stopwatch logic.
 - Managing **pause/resume logic** without resetting time values.
 
-This project gave me strong practice in **JavaScript state management** and building **multi-tool interfaces** without frameworks.
+This project gave me strong practice in **JavaScript state management** and building **multi-tool interfaces**.
